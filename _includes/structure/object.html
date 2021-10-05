@@ -1,0 +1,30 @@
+
+    <!-- start image block -->
+
+    <!-- <div class="cover-image ">
+      <img class="align-self-center ml-1 mr-3 rounded-circle float-right thumb-post" src="{{ site.baseurl }}/images/discover/placeholder.svg"
+                   alt="{{ post.label }}'s  image" height="150" width="150" loading="lazy">
+    </div> -->
+
+    <!-- end image block -->
+
+    <div class="contents-label mb-3 h-100">
+    <ul>
+      {% if page.exhibition_number != blank %}
+        <li>Exhibition number: {{ page.exhibition_number }}</li>
+      {% endif %}
+      {% if page.exhibition_location != blank %}
+        <li>Exhibition gallery: {{ page.exhibition_location }}</li>
+      {% endif %}
+      {% if page.artist_info != blank %}
+        <li>Artist: {{ page.artist_info }}</li>
+      {% endif %}
+      {% if page.exhibition_area != blank %}
+        <li>Exhibition Area: {{ page.exhibition_area }}</li>
+      {% endif %}
+      {% if page.gallery_location != blank %}
+        <li>Gallery Location: {{ page.gallery_location }}</li>
+      {% endif %}
+    </ul>
+    {{ content }}
+    </div>

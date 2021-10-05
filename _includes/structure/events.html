@@ -1,0 +1,26 @@
+<div vocab="http://schema.org/" class="event-wrapper" typeof="Event">
+  <div class="cover-image">
+    <img class="align-self-center mr-3 rounded-circle float-right thumb-post" src="{{ site.baseurl }}/images/events/{{ page.thumbnail }}"
+    alt="{{page.title}}'s profile image" height="150" width="150" loading="lazy">
+  </div>
+
+  <!-- end image block -->
+
+  <div class="contents-label">
+    <p class="card-text description">{{ page.content }}</p>
+
+    {% assign today_date = 'now' | date: '%s' %}
+    {% assign event_date = page.date-live | date: '%s' %}
+    {% if event_date < today_date %}
+    <div class="ribbon-wrapper">
+      <div class="ribbon red">Expired</div>
+    </div>
+    {% endif %}
+    <ul>
+      <li class="event-time">Time: {{ page.time }}</li>
+      <li class="event-date" property="startDate" content="{{ page.date-live }}">Date: {{ page.date-live | date: "%A %-d of %B, %Y"  }}</li>
+      <li>Cost: <span class="event-price" property="price">{{ page.cost }}</span></li>
+      <li>Venue: {{ page.venue }}</li>
+    </ul>
+  </div>
+</div>
