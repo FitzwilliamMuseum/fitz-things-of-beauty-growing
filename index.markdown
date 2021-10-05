@@ -13,3 +13,5 @@ The story of British Studio Pottery is a global one, with pots and potters trave
 > “If you are lucky and if you live long enough, and if you trust your materials and you trust your instincts, you will see things of beauty growing up in front of you...”
 
 ![An image of Michael Cardew at work](/images/tbg_BSP_Michael Cardew1.jpeg){: .img-fluid }
+
+<a href="https://fitz-cms-images.s3.eu-west-2.amazonaws.com/tbg_flux_leaflet_final.pdf" download class="btn btn-success">Read the exhibition leaflet</a>
