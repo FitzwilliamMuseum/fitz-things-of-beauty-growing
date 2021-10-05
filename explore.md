@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /explore/
-title: Explore wood block prints
+title: Explore the objects
 ---
 <div class="container mb-3">
   <div class="row">
@@ -11,13 +11,13 @@ title: Explore wood block prints
 {% assign sorted = site.explore | sort:"order" %}
     {% for author in sorted limit:2 offset:offset %}
     <div class="col-md-4 mb-3">
-      <div class="card h-100" >
-        <a href="{{site.url}}{{site.baseurl}}{{ author.permalink }}" class="stretched-link">
-          <img class="card-img-top" src="{{site.url}}{{site.baseurl}}{{author.image}}" alt="Card image cap" width="300" height="300"/>
+      <div class="card card-fitz h-100" >
+        <a href="{{site.baseurl}}{{ author.url }}" class="stretched-link">
+          <img class="card-img-top" style="object-fit:cover;" src="{{site.url}}{{site.baseurl}}{{author.image}}" alt="Card image cap" width="300" height="300"/>
         </a>
         <div class="card-body">
           <h3 class="lead mt-2">
-            <a href="{{site.url}}{{site.baseurl}}{{ author.permalink }}" class="stretched-link">{{author.title}}</a>
+            <a href="{{site.baseurl}}{{ author.url }}" class="stretched-link">{{author.title}}</a>
           </h3>
         </div>
       </div>
