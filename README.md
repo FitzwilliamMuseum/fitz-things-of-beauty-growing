@@ -1,4 +1,5 @@
 # Things of Beauty Growing
+[![DOI](https://zenodo.org/badge/413723408.svg)](https://zenodo.org/badge/latestdoi/413723408)
 
 ![thingsOfBeauty](https://user-images.githubusercontent.com/286552/163694089-42cfdc4d-c8c9-4f5c-84a0-c895d11da2b6.jpg)
 
